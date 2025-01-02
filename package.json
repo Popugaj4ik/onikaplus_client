@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:onikaplus_client": "node dist/onikaplus_client/server/server.mjs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-client": "nswag run nswag.json"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +45,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "lint-staged": "^15.3.0",
+    "nswag": "^14.2.0",
     "prettier": "^3.4.2",
     "typescript": "~5.6.2"
   }
